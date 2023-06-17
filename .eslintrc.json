@@ -1,21 +1,22 @@
 {
   "root": true,
   "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "project": "./tsconfig.json"
+  },
   "env": {
     "es2020": true,
     "jest": true,
     "node": true
   },
-  "parserOptions": {
-    "project": "./tsconfig.json"
-  },
   "extends": [
     "plugin:@typescript-eslint/recommended",
-    "eslint-config-prettier"
+    "airbnb-base",
+    "prettier"
 
   ],
   "plugins": [
-    "eslint-plugin-prettier"
+    "@typescript-eslint"
 
   ],
   "rules": {
